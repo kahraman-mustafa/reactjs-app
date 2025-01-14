@@ -1,9 +1,9 @@
-import DetailsCardComponent from "./components/DetailsCardComponent";
-import { useState, useEffect } from 'react';
 import axios from 'axios';
+import {useEffect, useState} from 'react';
+import DetailsCardComponent from "./components/DetailsCardComponent";
 
 function App() {
-  const [formData, setFormData] = useState({ name: "", email: "" });
+  const [formData, setFormData] = useState({name: "", email: ""});
   const [recordData, setRecordData] = useState([]);
 
   console.log("process.env:", process.env);
@@ -12,17 +12,17 @@ function App() {
   const base_url = process.env.REACT_APP_NODE_ENV === 'development' ? process.env.REACT_APP_LOCAL_BASE_URL : process.env.REACT_APP_SERVER_BASE_URL;
 
   useEffect(() => {
-   axios.get(`${base_url}/getUsers`).then(res => { setRecordData(res.data) }).catch(err => alert(`Some error occured ==>${err}`));
+    axios.get(`${base_url}/getUsers`).then(res => {setRecordData(res.data)}).catch(err => alert(`Some error occured ==>${err}`));
   }, []);
 
   const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+    const {name, value} = event.target;
+    setFormData((prevFormData) => ({...prevFormData, [name]: value}));
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    axios.post(`${base_url}/addUser`, formData).then(res => { setFormData({ name: "", email: "" }); alert("User created successfully") }).catch(err => alert(`Some error occured ==>${err}`));
+    axios.post(`${base_url}/addUser`, formData).then(res => {setFormData({name: "", email: ""}); alert("User created successfully")}).catch(err => alert(`Some error occured ==>${err}`));
   };
 
   return (
@@ -38,7 +38,7 @@ function App() {
           <div className="col">
             <h3 className="text-center">Users List</h3>
             <ul>
-              {recordData.map((r, i) => <tl key={i}><DetailsCardComponent email={r.email} sn={i+1} userN={r.name} /></tl>)}
+              {recordData.map((r, i) => <tl key={i}><DetailsCardComponent email={r.email} sn={i + 1} userN={r.name} /></tl>)}
             </ul>
           </div>
           <div className="col">
