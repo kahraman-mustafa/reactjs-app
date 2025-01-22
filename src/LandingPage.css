@@ -1,0 +1,65 @@
+/* LandingPage.css */
+
+.landing-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: sans-serif;
+}
+
+.welcome-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.intro-section {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Profil resmi ve isim */
+.profile-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lawyer-photo {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.lawyer-name {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* İletişim bilgileri */
+.contact-section {
+  margin-bottom: 20px;
+}
+
+.contact-section h3 {
+  margin-top: 0;
+}
+
+.map-container {
+  margin: 16px 0;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* QR kod kısmı */
+.qr-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.qr-code {
+  width: 60%;
+  height: auto;
+}
