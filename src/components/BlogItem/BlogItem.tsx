@@ -59,7 +59,7 @@ const BlogItem: React.FC<BlogItemProps> = ({post, viewType}) => {
           {post.author.name} – {new Date(post.createdAt).toLocaleDateString()}
         </small>
 
-        <Button as={Link} to={`/blog/${post.id}`} variant="outline-primary">
+        <Button as={Link as any} to={`/blog/${post.id}`} variant="outline-primary">
           Yazıyı Oku
         </Button>
       </Card.Body>
