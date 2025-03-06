@@ -1,7 +1,10 @@
-import React from "react";
-import "./LandingPage.css"; // İsteğe bağlı: stilleri burada tanımlayabilirsiniz.
+// LandingPage.tsx
 
-const LandingPage = () => {
+import React from "react";
+import "./LandingPage.module.css"; // CSS dosyası
+
+// Bileşenimiz hiçbir prop almadığından basit bir React.FC tipi yeterli
+const LandingPage: React.FC = () => {
   return (
     <main className="landing-container">
       {/* Karşılama başlığı */}
@@ -10,10 +13,10 @@ const LandingPage = () => {
       {/* Kendimle ilgili genel açıklama alanı */}
       <section className="intro-section">
         <p>
-          Ben Av. Mustafa Kahraman. Büromuz çeşitli
-          hukuk dallarında danışmanlık ve avukatlık hizmetleri sunmaktadır.
-          Web sitemizi şu anda güncelleme aşamasındayız; ancak aşağıdaki iletişim
-          bilgilerimizden bizimle her zaman irtibata geçebilirsiniz.
+          Ben Av. Mustafa Kahraman. Büromuz çeşitli hukuk dallarında danışmanlık
+          ve avukatlık hizmetleri sunmaktadır. Web sitemizi şu anda güncelleme
+          aşamasındayız; ancak aşağıdaki iletişim bilgilerimizden bizimle her
+          zaman irtibata geçebilirsiniz.
         </p>
       </section>
 
@@ -30,10 +33,13 @@ const LandingPage = () => {
       {/* Adres, telefon, harita */}
       <section className="contact-section">
         <h3>İletişim Bilgileri</h3>
-        <p>Adres: Odunluk Mahallesi Akpınar Caddesi No:7 Daire:14 Kat:2, Nilüfer, Bursa, Türkiye</p>
+        <p>
+          Adres: Odunluk Mahallesi Akpınar Caddesi No:7 Daire:14 Kat:2, Nilüfer,
+          Bursa, Türkiye
+        </p>
         <p>Telefon: +90 (224) 334 02 38 / Cep: +90 (538) 956 4380</p>
 
-        {/* Gömülü harita (örnek Google Maps iframe). Konum bilgisine göre embed kodu güncelleyin. */}
+        {/* Google Maps embed örneği */}
         <div className="map-container">
           <iframe
             title="Office Map"
@@ -41,7 +47,7 @@ const LandingPage = () => {
             width="100%"
             height="300"
             style={{border: 0}}
-            allowFullScreen=""
+            allowFullScreen={true}
             loading="lazy"
           ></iframe>
         </div>
@@ -52,13 +58,15 @@ const LandingPage = () => {
           Büromuza toplu taşıma veya özel araçla rahatlıkla ulaşabilirsiniz.
         </p>
         <p>
-          Ofisimize toplu ulaşım ile Odunluk metro istasyonundan, Odunluk üst geçidinin iki yanındaki otobüs duraklarından,
-          Hüdavendigar Kent Parkının oradan geçen Mihraplı Caddesi üzerindeki otobüs duraklarından 5 dakika yürüme mesafesi
-          ile ulaşabilirsiniz.
+          Ofisimize toplu ulaşım ile Odunluk metro istasyonundan, Odunluk üst
+          geçidinin iki yanındaki otobüs duraklarından, Hüdavendigar Kent
+          Parkının oradan geçen Mihraplı Caddesi üzerindeki otobüs duraklarından
+          5 dakika yürüme mesafesi ile ulaşabilirsiniz.
         </p>
         <p>
-          Plazanın çevresinde belediyenin açık otoparkı, cadde üzeri park yerleri ve Suryapı Marka AVM'nin üç saate kadar ücretsiz
-          açık ve kapalı otopark alanları bulunmaktadır.
+          Plazanın çevresinde belediyenin açık otoparkı, cadde üzeri park
+          yerleri ve Suryapı Marka AVM'nin üç saate kadar ücretsiz açık ve kapalı
+          otopark alanları bulunmaktadır.
         </p>
       </section>
 
@@ -70,7 +78,10 @@ const LandingPage = () => {
           alt="QR kodu"
           className="qr-code"
         />
-        <p>QR kodu kamera ya da QR kod okuma uygulamanıza okutarak iletişim bilgilerini tek tıkla kaydedin</p>
+        <p>
+          QR kodu kamera ya da QR kod okuma uygulamanıza okutarak iletişim
+          bilgilerini tek tıkla kaydedin
+        </p>
       </section>
     </main>
   );

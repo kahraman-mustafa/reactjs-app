@@ -1,0 +1,21 @@
+/* src/components/Layout/Layout.module.css */
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layoutHeader {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+.layoutNav {
+  display: flex;
+  gap: 1rem;
+}
+
+.layoutContent {
+  flex: 1;
+  padding: 1rem;
+}

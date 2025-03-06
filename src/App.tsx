@@ -1,7 +1,12 @@
 // import DetailsCardComponent from "./components/DetailsCardComponent";
-import LandingPage from './LandingPage';
+import React from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import BlogDetailPage from "./components/BlogDetailPage/BlogDetailPage.tsx";
+import BlogListPage from "./components/BlogListPage/BlogListPage.tsx";
+import Layout from "./components/Layout/Layout.tsx";
+import LandingPage from "./LandingPage.tsx"; // Mevcut giriş sayfanız (TypeScript'e uyarlayın)
 
-function App() {
+const App: React.FC = () => {
   // const [formData, setFormData] = useState({name: "", email: ""});
   // const [recordData, setRecordData] = useState([]);
 
@@ -25,9 +30,16 @@ function App() {
   // };
 
   return (
-    <div className="App">
-      <LandingPage />
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/blog" element={<BlogListPage />} />
+          <Route path="/blog/:postId" element={<BlogDetailPage />} />
+          {/* 404 vs. eklemek isterseniz */}
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

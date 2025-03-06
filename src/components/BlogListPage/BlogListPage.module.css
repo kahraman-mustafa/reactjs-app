@@ -1,0 +1,16 @@
+/* src/components/BlogListPage/BlogListPage.module.css */
+
+.blogListPage {
+  padding: 1rem;
+}
+
+.blogList.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogList.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
