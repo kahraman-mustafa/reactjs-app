@@ -1,21 +1,54 @@
-/* src/components/Layout/Layout.module.css */
-.layoutContainer {
+/* Layout.css */
+
+.layout-container {
+  /* sayfa genelini kaplayan bir çerçeve */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  /* fade-in animasyonu için theme.css’ten gelen .fade-in */
+  /* Bu sınıfı doğrudan HTML'de kullandığımız için ek bir tanım gerekmez. */
 }
 
-.layoutHeader {
-  border-bottom: 1px solid #ccc;
-  padding: 0.5rem;
+.layout-header {
+  /* Üst barın arka planını tema renginden yapalım */
+  background-color: var(--color-primary);
+  padding: 0.75rem 1rem;
+  /* Gölge eklemek isterseniz:
+     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  */
 }
 
-.layoutNav {
+.layout-nav {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
-.layoutContent {
+.nav-link {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: var(--font-size-md);
+  transition: color var(--transition-fast);
+  /* Padding eklemek istersek:
+     padding: 0.5rem 0.75rem;
+     border-radius: var(--radius-sm);
+  */
+}
+
+/* Hover'da hafif renk veya arka plan efekti ekleyebiliriz */
+.nav-link:hover {
+  color: var(--color-accent);
+  /* Arka plan eklemek isterseniz:
+     background-color: rgba(255,255,255,0.15);
+  */
+}
+
+/* İçerik alanı */
+.layout-content {
   flex: 1;
   padding: 1rem;
+  /* Arka planı theme.css’te tanımlı arka plan rengi yapabilirsiniz.
+     background-color: var(--color-secondary); 
+     (Ancak body’de zaten var(--color-secondary) varsa, ekstra gerekmeyebilir.)
+  */
 }

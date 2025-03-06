@@ -1,11 +1,23 @@
-// src/components/BlogItem/BlogItem.tsx
-
 import React from "react";
+import {Button, Card} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import {Post} from "../../data/samplePosts.ts";
-import styles from "./BlogItem.module.css";
 
 type ViewType = "list" | "catalog";
+
+interface Author {
+  name: string;
+  profilePic?: string;
+}
+interface Post {
+  id: number;
+  title: string;
+  tags: string[];
+  author: Author;
+  createdAt: string;
+  updatedAt: string;
+  coverImage?: string;
+  excerpt: string;
+}
 
 interface BlogItemProps {
   post: Post;
@@ -13,38 +25,45 @@ interface BlogItemProps {
 }
 
 const BlogItem: React.FC<BlogItemProps> = ({post, viewType}) => {
+  // "list" veya "catalog" moduna göre Card'ı yatay (list) / dikey (catalog) yapabiliriz.
+  // React-Bootstrap'te "horizontal" parametresi yok, ama "d-flex flex-row" ekleyebiliriz.
+  const cardClasses = viewType === "list" ? "d-flex flex-row" : "";
+
   return (
-    <div className={`${styles.blogItem} ${styles[viewType]}`}>
-      {viewType === "catalog" && post.coverImage && (
-        <img
+    <Card className={`h-100 border-0 shadow-sm ${cardClasses}`}>
+      {post.coverImage && (
+        <Card.Img
+          variant={viewType === "list" ? "left" : "top"} // "left" yok, ama custom
           src={post.coverImage}
-          alt={post.title}
-          className={styles.blogItemCover}
+          style={viewType === "list" ? {width: "30%", objectFit: "cover"} : {}}
         />
       )}
 
-      <div className={styles.blogItemContent}>
-        <h3 className={styles.blogItemTitle}>{post.title}</h3>
+      <Card.Body>
+        <Card.Title>{post.title}</Card.Title>
 
-        <div className={styles.blogItemTags}>
+        {/* Etiketler */}
+        <div className="mb-2">
           {post.tags.map((tag) => (
-            <span key={tag} className={styles.blogItemTag}>
+            <span key={tag} className="badge bg-secondary me-1">
               {tag}
             </span>
           ))}
         </div>
 
-        <p className={styles.blogItemExcerpt}>{post.excerpt}</p>
+        {/* Excerpt */}
+        <Card.Text>{post.excerpt}</Card.Text>
 
-        <small className={styles.blogItemMeta}>
-          {post.author.name} - {new Date(post.createdAt).toLocaleDateString()}
+        {/* Meta bilgi */}
+        <small className="text-muted d-block mb-2">
+          {post.author.name} – {new Date(post.createdAt).toLocaleDateString()}
         </small>
 
-        <Link to={`/blog/${post.id}`} className={styles.blogItemLink}>
+        <Button as={Link} to={`/blog/${post.id}`} variant="outline-primary">
           Yazıyı Oku
-        </Link>
-      </div>
-    </div>
+        </Button>
+      </Card.Body>
+    </Card>
   );
 };
 

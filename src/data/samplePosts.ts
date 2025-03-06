@@ -167,4 +167,78 @@ export const samplePosts: Post[] = [
       </p>
     `,
   },
+  // 2 numaralı yeni post
+  {
+    id: 2,
+    title: "İşe İade Davası ve Süreleri",
+    tags: ["işe iade", "iş hukuku", "alacak"],
+    author: {
+      name: "Av. Mustafa Kahraman",
+      profilePic: "/assets/cubbeli-vesika.jpg",
+    },
+    createdAt: "2025-03-02T09:00:00Z",
+    updatedAt: "2025-03-02T10:30:00Z",
+    coverImage: "/assets/blog-cover-3.jpg", // Eğer kapak resmi eklemek isterseniz
+    excerpt: "İşe iade davası 1 ay içinde açılmalıdır.",
+    content: `
+      <h1>İşe İade Davası ve Süreleri</h1>
+
+      <h2>1. Kavramsal Çerçeve ve Amacı</h2>
+      <p>
+        Zamanaşımı, borçlar hukukunda alacak hakkını, belirli bir sürenin geçmesi
+        sonucunda kanunen zayıflatan bir müessese olarak tanımlanır. Ancak bu durum,
+        borcun tamamen ortadan kalkması anlamına gelmez. Borcun sona ermesi yerine,
+        borçlunun mahkemeye karşı “zamanaşımı def’i” ileri sürme hakkı doğar. Zamanaşımı
+        def’ini dava hakkını kaldıran bir sebep olmaktan çok, davayı reddettiren bir
+        sebep olarak tanımlamak daha doğru olur. Zamanaşımının temel amacı, hukuki
+        ilişkilerde belirsizliği önleyerek toplumda hukuki güvenliği ve istikrarı
+        sağlamaktır.
+      </p>
+
+      <h2>6. Sonuç ve Değerlendirme</h2>
+      <p>
+        Zamanaşımı, borçlar hukukunda hukuki güvenliği ve düzeni sağlamaya hizmet eden
+        önemli bir kurumdur. Belirli koşullarda alacak hakkının zamanaşımına uğraması,
+        taraflar arasındaki adalet dengesinin korunması ve yargının eski ve
+        delillendirilemeyen davalarla uğraşmaması için getirilen bir çözümdür.
+      </p>
+    `,
+  },
+  // 3 numaralı yeni post
+  {
+    id: 3,
+    title: "Boşanma Davası ve Süreleri",
+    tags: ["boşanma", "aile hukuku", "tazminat"],
+    author: {
+      name: "Av. Mustafa Kahraman",
+      profilePic: "/assets/cubbeli-vesika.jpg",
+    },
+    createdAt: "2025-03-01T09:00:00Z",
+    updatedAt: "2025-03-01T10:30:00Z",
+    coverImage: "/assets/blog-cover-3.jpg", // Eğer kapak resmi eklemek isterseniz
+    excerpt: "Anlaşmalı boşanma ve çekişmeli boşanma farkları",
+    content: `
+      <h1>Boşanma Davası ve Süreleri</h1>
+
+      <h2>1. Kavramsal Çerçeve ve Amacı</h2>
+      <p>
+        Zamanaşımı, borçlar hukukunda alacak hakkını, belirli bir sürenin geçmesi
+        sonucunda kanunen zayıflatan bir müessese olarak tanımlanır. Ancak bu durum,
+        borcun tamamen ortadan kalkması anlamına gelmez. Borcun sona ermesi yerine,
+        borçlunun mahkemeye karşı “zamanaşımı def’i” ileri sürme hakkı doğar. Zamanaşımı
+        def’ini dava hakkını kaldıran bir sebep olmaktan çok, davayı reddettiren bir
+        sebep olarak tanımlamak daha doğru olur. Zamanaşımının temel amacı, hukuki
+        ilişkilerde belirsizliği önleyerek toplumda hukuki güvenliği ve istikrarı
+        sağlamaktır.
+      </p>
+
+      <h2>6. Sonuç ve Değerlendirme</h2>
+      <p>
+        Zamanaşımı, borçlar hukukunda hukuki güvenliği ve düzeni sağlamaya hizmet eden
+        önemli bir kurumdur. Belirli koşullarda alacak hakkının zamanaşımına uğraması,
+        taraflar arasındaki adalet dengesinin korunması ve yargının eski ve
+        delillendirilemeyen davalarla uğraşmaması için getirilen bir çözümdür.
+      </p>
+    `,
+  },
 ];

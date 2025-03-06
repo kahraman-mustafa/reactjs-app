@@ -1,45 +1,45 @@
-// src/components/BlogListPage/BlogListPage.tsx
-
 import React, {useMemo, useState} from "react";
-import {Post, samplePosts} from "../../data/samplePosts.ts";
+import {Col, Row} from "react-bootstrap";
+import {samplePosts} from "../../data/samplePosts.ts";
 import BlogFilterBar from "../BlogFilterBar/BlogFilterBar.tsx";
 import BlogItem from "../BlogItem/BlogItem.tsx";
-import styles from "./BlogListPage.module.css";
-
-type SortOrder = "newest" | "oldest";
-type ViewType = "list" | "catalog";
 
 const BlogListPage: React.FC = () => {
-  const [selectedTag, setSelectedTag] = useState<string>("");
-  const [sortOrder, setSortOrder] = useState<SortOrder>("newest");
-  const [viewType, setViewType] = useState<ViewType>("list");
+  const [selectedTag, setSelectedTag] = useState("");
+  const [sortOrder, setSortOrder] = useState<"newest" | "oldest">("newest");
+  const [viewType, setViewType] = useState<"list" | "catalog">("list");
 
-  // Etiketleri toplu olarak alalım
-  const tagOptions = useMemo<string[]>(() => {
+  // Filtre
+  const tagOptions = useMemo(() => {
     const allTags = samplePosts.flatMap((p) => p.tags);
     return Array.from(new Set(allTags));
   }, []);
 
-  // Filtre ve sıralama uygulayalım
-  const filteredPosts = useMemo<Post[]>(() => {
+  // Sıralama
+  const filteredPosts = useMemo(() => {
     let posts = [...samplePosts];
-
     if (selectedTag) {
       posts = posts.filter((p) => p.tags.includes(selectedTag));
     }
-
     if (sortOrder === "newest") {
-      posts.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+      posts.sort(
+        (a, b) =>
+          new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+      );
     } else {
-      posts.sort((a, b) => new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime());
+      posts.sort(
+        (a, b) =>
+          new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime()
+      );
     }
-
     return posts;
   }, [selectedTag, sortOrder]);
 
   return (
-    <div className={styles.blogListPage}>
-      <h2>Blog Yazıları</h2>
+    // Container'ı Layout'ta zaten kullanıyorsak, burada
+    // ek bir Container yerine boş bir fragment veya div kullanılabilir.
+    <>
+      <h2 className="mb-4">Blog Yazıları</h2>
 
       <BlogFilterBar
         selectedTag={selectedTag}
@@ -51,12 +51,24 @@ const BlogListPage: React.FC = () => {
         onViewTypeChange={setViewType}
       />
 
-      <div className={`${styles.blogList} ${styles[viewType]}`}>
-        {filteredPosts.map((post) => (
-          <BlogItem key={post.id} post={post} viewType={viewType} />
-        ))}
-      </div>
-    </div>
+      {viewType === "list" && (
+        <div className="d-flex flex-column gap-3">
+          {filteredPosts.map((post) => (
+            <BlogItem key={post.id} post={post} viewType="list" />
+          ))}
+        </div>
+      )}
+
+      {viewType === "catalog" && (
+        <Row xs={1} md={2} xl={3} className="g-4">
+          {filteredPosts.map((post) => (
+            <Col key={post.id}>
+              <BlogItem post={post} viewType="catalog" />
+            </Col>
+          ))}
+        </Row>
+      )}
+    </>
   );
 };
 

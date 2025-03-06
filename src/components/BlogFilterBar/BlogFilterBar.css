@@ -1,0 +1,65 @@
+/* src/components/BlogFilterBar/BlogFilterBar.css */
+
+/* Ana konteyner: kart benzeri görünüm verelim */
+.filter-bar {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap; /* Dar alanlarda satır kaydırma */
+  gap: 1rem;
+}
+
+/* Gruplar */
+.filter-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0; /* Dilerseniz ek spacing verebilirsiniz. */
+}
+
+/* Label */
+.filter-bar label {
+  color: var(--color-heading);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+}
+
+/* Select kutusu */
+.filter-bar select {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.4rem 0.6rem;
+  font-size: var(--font-size-md);
+  color: var(--color-text);
+  background-color: var(--color-white);
+  transition: border-color var(--transition-fast);
+}
+.filter-bar select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+/* Butonlar */
+.filter-bar button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 1rem;
+  font-size: var(--font-size-md);
+  transition: background-color var(--transition-fast);
+  cursor: pointer;
+}
+
+.filter-bar button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Aktif görünüm butonu biraz koyu */
+.filter-bar .active {
+  background-color: var(--color-primary-dark);
+}

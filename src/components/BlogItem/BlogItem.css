@@ -1,0 +1,92 @@
+/* src/components/BlogItem/BlogItem.css */
+
+/* Temel kart stili */
+.blog-item {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform var(--transition-normal);
+}
+.blog-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Liste görünümünde blog item (yatay layout) */
+.blog-item.list {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+/* Katalog görünümünde (grid ile çalıştığı için daha dikey layout) */
+.blog-item.catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Kapak resmi */
+.blog-item-cover {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: 0.75rem;
+}
+
+/* İçerik alanı */
+.blog-item-content {
+  /* Liste görünümünde resim sağdaysa, vs. buradan kontrol edebilirsiniz */
+}
+
+/* Başlık */
+.blog-item-title {
+  font-size: var(--font-size-lg);
+  color: var(--color-heading);
+  margin-bottom: 0.5rem;
+}
+
+/* Etiketler */
+.blog-item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Her etiket */
+.blog-item-tag {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+}
+
+/* Kısa özet */
+.blog-item-excerpt {
+  font-size: var(--font-size-md);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Meta bilgi (yazar, tarih) */
+.blog-item-meta {
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* "Yazıyı Oku" linki */
+.blog-item-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+.blog-item-link:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
