@@ -188,7 +188,7 @@ export const samplePosts: Post[] = [
             </span><strong>teslim anında sözleşmeye aykırı durumda olan mal</strong><span style="font-weight: 400;"> anlamına
               gelir. Başka bir deyişle, ürünün ambalajında, etiketinde, tanıtımında veya satış sözleşmesinde belirtilen
               özellikleri taşımaması, standartlarına uymaması ya da objektif olarak beklenen faydaları sağlamaması halinde mal
-              ayıplı kabul edilir. Örneğin, çalışır durumda olması gereken bir elektronik cihazın arızalı çıkması veya vaat edilen
+              ayıplı kabul edilir. Örneğin, çalışır durumda olması gereken  bir elektronik cihazın arızalı çıkması veya vaat edilen
               özellikleri barındırmaması ayıplı mal kapsamındadır. Satıcı, tüketiciye ürünü </span><strong>sözleşmeye uygun halde
               teslim etmekle yükümlüdür</strong><span style="font-weight: 400;">; aksi takdirde ortaya çıkan ayıptan yasal olarak
               sorumlu olur.</span></p>
