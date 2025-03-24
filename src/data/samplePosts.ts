@@ -29,7 +29,7 @@ export const samplePosts: Post[] = [
     },
     createdAt: "2025-03-06T09:00:00Z",
     updatedAt: "2025-03-06T10:30:00Z",
-    coverImage: "/assets/blog-cover-3.jpg", // Eğer kapak resmi eklemek isterseniz
+    coverImage: "/assets/zamanasimi-hukuk.jpg", // Eğer kapak resmi eklemek isterseniz
     excerpt:
       "Zamanaşımı, borçlar hukukunda borcu ortadan kaldırmaz ancak alacaklının dava hakkını zayıflatır.",
     content: `
@@ -178,7 +178,7 @@ export const samplePosts: Post[] = [
     },
     createdAt: "2025-03-13T09:00:00Z",
     updatedAt: "2025-03-13T10:30:00Z",
-    coverImage: "/assets/blog-cover-3.jpg", // Eğer kapak resmi eklemek isterseniz
+    coverImage: "/assets/tuketici-hukuku.jpg", // Eğer kapak resmi eklemek isterseniz
     excerpt: "Ayıplı Mal Karşısında Tüketicinin Hakları",
     content: `
           <h1><strong>Ayıplı Mal ve Tüketici Hakları</strong></h1>
@@ -327,7 +327,7 @@ export const samplePosts: Post[] = [
     },
     createdAt: "2025-03-24T09:00:00Z",
     updatedAt: "2025-03-24T10:30:00Z",
-    coverImage: "/assets/blog-cover-3.jpg", // Eğer kapak resmi eklemek isterseniz
+    coverImage: "/assets/isci-hukuk.jpg", // Eğer kapak resmi eklemek isterseniz
     excerpt:
       "İşçi alacakları davası, bir iş sözleşmesinin sona ermesiyle birlikte işçinin hak etmiş olduğu ücret, tazminat ve diğer parasal haklarını talep edebildiği hukuk davasıdır.",
     content: `
