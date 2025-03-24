@@ -316,4 +316,232 @@ export const samplePosts: Post[] = [
           <p> </p>
     `,
   },
+  // 3 numaralı yeni post
+  {
+    id: 3,
+    title: "İşçi Alacakları Davası",
+    tags: ["işçi alacakları", "iş hukuku", "iş sözleşmesinin feshi"],
+    author: {
+      name: "Av. Mustafa Kahraman",
+      profilePic: "/assets/cubbeli-vesika.jpg",
+    },
+    createdAt: "2025-03-24T09:00:00Z",
+    updatedAt: "2025-03-24T10:30:00Z",
+    coverImage: "/assets/blog-cover-3.jpg", // Eğer kapak resmi eklemek isterseniz
+    excerpt:
+      "İşçi alacakları davası, bir iş sözleşmesinin sona ermesiyle birlikte işçinin hak etmiş olduğu ücret, tazminat ve diğer parasal haklarını talep edebildiği hukuk davasıdır.",
+    content: `
+      <h1><strong>İşçi Alacakları Davası Nedir ve Hangi Durumlarda Açılır?</strong></h1>
+      <p><span style="font-weight: 400;">İşçi alacakları davası, bir iş sözleşmesinin sona ermesiyle birlikte işçinin hak
+          etmiş olduğu ücret, tazminat ve diğer parasal haklarını talep edebildiği hukuk davasıdır. Bu dava genellikle iş
+          sözleşmesinin feshi sonrasında gündeme gelir. İş sözleşmesi ister işveren ister işçi tarafından feshedilsin, eğer
+          fesih sonucunda işçinin hakları ödenmemişse işçi alacakları davası açılabilir. Ancak işçinin hangi hallerde bu
+          hakları talep edebileceği, fesih türüne göre değişir.</span></p>
+      <p><strong>İşveren Feshettiğinde:</strong><span style="font-weight: 400;"> İşveren işçiyi haksız veya geçersiz bir
+          nedenle işten çıkarırsa (örneğin iş kanununda sayılan haklı nedenler olmaksızın), işçi kıdem tazminatı, ihbar
+          tazminatı gibi feshe bağlı tazminatlarını ve varsa diğer birikmiş alacaklarını talep edebilir. İşverenin
+        </span><strong>haklı nedenle</strong><span style="font-weight: 400;"> (örneğin işçinin </span><em><span
+            style="font-weight: 400;">ahlak ve iyi niyet kurallarına aykırı davranışı</span></em><span
+          style="font-weight: 400;"> gibi 4857 sayılı İş Kanunu m.25/2’de sayılan haller) feshetmesi durumunda ise işçi kıdem
+        </span><strong>ve ihbar tazminatı alamaz</strong><span style="font-weight: 400;">, sadece ödenmemiş ücret, izin ücreti
+          gibi hak etmiş olduğu alacaklarını isteyebilir. İşveren fesih bildirimi yapmadan işçiyi çıkarmışsa (ihbar süresine
+          uymamışsa), bu durumda işçi ihbar tazminatı da talep edebilir; işverenin bunu ödemediğini ispat yükü
+          işverendedir.</span></p>
+      <p><strong>İşçi Feshettiğinde:</strong><span style="font-weight: 400;"> Kural olarak kendi isteğiyle (istifa ederek)
+          ayrılan işçi kıdem tazminatı </span><strong>alamaz</strong><span style="font-weight: 400;">. Ancak kanun işçiye bazı
+          istisnai durumlarda </span><strong>haklı nedenle derhal fesih</strong><span style="font-weight: 400;"> imkânı tanır.
+          İşçi, İş Kanunu m.24’de belirtilen sağlık sebepleri, ahlak ve iyi niyet kurallarına aykırı haller veya benzeri haklı
+          sebeplerle sözleşmesini feshederse, bu </span><strong>haklı fesih</strong><span style="font-weight: 400;"> sayesinde
+          kıdem tazminatına hak kazanır. Örneğin işveren ücretleri kanuna veya sözleşmeye uygun şekilde ödemiyorsa (ücretin
+          gününde ödenmemesi de buna dahildir), işçi noterden bildirim yaparak sözleşmeyi haklı nedenle feshedip kıdem
+          tazminatını talep edebilir. Yargıtay kararları da </span><strong>ücretin zamanında ödenmemesini</strong><span
+          style="font-weight: 400;">, işçiye haklı fesih hakkı veren önemli bir neden olarak kabul etmektedir. İşçi haklı
+          nedenle feshettiğinde ihbar süresine uyması gerekmez ve ihbar tazminatı talep edemez (zira ihbar tazminatı,
+          sözleşmeyi fesheden tarafa değil, karşı tarafa ödenir).</span></p>
+      <p><span style="font-weight: 400;">Bunun dışında kanundan doğan bazı özel hallerde işçi kendi isteği ile ayrıldığı halde
+          kıdem tazminatı alabilir. Örneğin kadın işçi evlilik tarihinden itibaren bir yıl içinde evlilik nedeniyle işten
+          ayrılırsa kıdem tazminatına hak kazanır; yine erkek işçi muvazzaf askerlik hizmeti nedeniyle ayrılırsa veya işçi
+          emeklilik şartlarını sağladığı için ayrılırsa kıdem tazminatı talep edebilir. İşçinin ölümü halinde de kıdem
+          tazminatı hakkı doğar ve bu tazminat yasal mirasçılarına ödenir (mirasçılar gerektiğinde dava açabilir).</span></p>
+      <p><span style="font-weight: 400;">Özetle, </span><strong>işverenin feshi</strong><span style="font-weight: 400;">
+          haksız/geçersiz ise veya </span><strong>işçinin feshi</strong><span style="font-weight: 400;"> haklı nedene
+          dayanıyorsa, işçi kıdem tazminatı başta olmak üzere haklarını talep edebilir. İşçinin
+        </span><strong>istifa</strong><span style="font-weight: 400;"> gibi haklı nedene dayanmayan kendi fesihlerinde ise
+          yalnızca ödenmemiş ücret, izin ücreti gibi alacaklarını isteyebilir; kıdem ve ihbar tazminatı alamaz.</span></p>
+      <h1><strong>İşçi Alacağı Davasını Kimler Açabilir?</strong></h1>
+      <p><span style="font-weight: 400;">İşçilik alacaklarını talep etmek amacıyla dava açma hakkı öncelikle işçiye aittir. İş
+          sözleşmesiyle çalışan (mavi yaka ya da beyaz yaka fark etmeksizin) her işçi, yukarıda belirtilen şartlar oluştuğunda
+          işvereninden alacaklarını talep etmek için dava açabilir. İşçinin vefatı halinde, kanuni mirasçıları (eş, çocuklar
+          gibi) işçinin hak ettiği ancak ödenmemiş bulunan tüm işçilik alacaklarını (örneğin kıdem tazminatı, son aya ait
+          ücret vb.) talep etmek üzere dava açabilir.</span></p>
+      <p><span style="font-weight: 400;">İşçilik alacakları davası, bireysel bir dava türüdür; genellikle sendika gibi üçüncü
+          kişiler doğrudan dava açamaz. Ancak işçi, bir avukata vekalet verebileceği gibi, miras bırakan işçinin mirasçıları
+          da kendi adlarına dava açarken ölen işçiyi temsilen hareket ederler. Eğer işçi alacağı birden fazla işçiyi
+          ilgilendiren toplu bir uyuşmazlık konusu ise, her işçi kendi alacağı için ayrı dava açmalıdır (veya usul ekonomisi
+          açısından bir araya gelerek birlikte dava açabilirler).</span></p>
+      <p><span style="font-weight: 400;">Bazı durumlarda işçi alacakları, iflas eden işverenin masasına kayıt ettirilerek veya
+          Sosyal Güvenlik Kurumu aracılığıyla (örneğin SGK’nın rücuen tahsil etmesi gibi) dolaylı yollarla da talep
+          edilebilir. Ancak klasik anlamda </span><strong>işçi alacağı davasını bizzat alacağı olan işçi veya onun yasal
+          halefleri</strong><span style="font-weight: 400;"> açabilir.</span></p>
+      <h1><strong>İşçi Alacakları Davası Açmak İçin Gerekli Şartlar (Arabuluculuk Şartı)</strong></h1>
+      <p><span style="font-weight: 400;">2018 yılından bu yana, işçilik alacaklarıyla ilgili dava açmadan önce
+        </span><strong>arabulucuya başvurma zorunluluğu</strong><span style="font-weight: 400;"> getirilmiştir. 7036 sayılı İş
+          Mahkemeleri Kanunu uyarınca, “işçi veya işveren alacağı ve tazminatı ile işe iade talebiyle açılan davalarda”
+        </span><strong>dava şartı</strong><span style="font-weight: 400;"> olarak öncelikle arabuluculuğa başvurulmuş olması
+          gerekir. Yani işçi alacakları konusunda dava açmadan önce, arabuluculuk süreci tamamlanmış olmalıdır; aksi halde
+          mahkeme dava şartı yokluğundan davayı usulden reddedecektir.</span></p>
+      <p><strong>Zorunlu arabuluculuk</strong><span style="font-weight: 400;"> süreci, işçi işveren uyuşmazlıklarında
+          genellikle şu şekilde işler: İşçi, işverenin merkezinin veya işyerinin bulunduğu yer arabuluculuk merkezine
+          başvurarak arabulucu talep eder. Arabulucu, başvuru tarihinden itibaren genellikle </span><strong>3 hafta (gerekirse
+          +1 hafta)</strong><span style="font-weight: 400;"> içinde tarafları toplantıya çağırarak görüşmeleri yürütür.
+          Taraflar anlaşırsa bir </span><strong>anlaşma tutanağı</strong><span style="font-weight: 400;"> düzenlenir;
+          anlaşamazlarsa </span><strong>son tutanak</strong><span style="font-weight: 400;"> (anlaşmama tutanağı) düzenlenir.
+          İşçi, anlaşma sağlanamadığına dair bu son tutanak ile birlikte mahkemeye dava açabilir. Arabulucuya başvuru ve
+          görüşme sürecinde geçen süre, zamanaşımı bakımından durur, bu da işçinin hak kaybını önler.</span></p>
+      <p><span style="font-weight: 400;">Arabuluculuk sürecinin istisnası, </span><strong>iş kazası ve meslek hastalığından
+          kaynaklı maddi-manevi tazminat davalarıdır</strong><span style="font-weight: 400;">; bu tür davalar arabulucuya tabi
+          değildir. Onun dışında kıdem, ihbar, fazla mesai, yıllık izin, ücret, UBGT ücreti gibi bütün işçilik alacağı ve
+          tazminatı konularında arabuluculuk dava şartıdır.</span></p>
+      <p><strong>Arabuluculukta Anlaşma Sağlanırsa:</strong><span style="font-weight: 400;"> Taraflar arabulucuda anlaşır ve
+          alacaklar konusunda protokol imzalarsa, bu anlaşma belgesi ilam niteliğinde sayılır. İşveren daha sonra bu belgede
+          kararlaştırılan ödemeleri yapmazsa, işçi bu belgeyi icra dairesine vererek doğrudan </span><strong>ilamlı
+          icra</strong><span style="font-weight: 400;"> yoluna başvurabilir. Bu durumda yeniden dava açmaya gerek
+          kalmaz.</span></p>
+      <p><strong>Arabuluculukta Anlaşma Sağlanamazsa:</strong><span style="font-weight: 400;"> Arabulucunun düzenlediği
+          anlaşmama tutanağı ile işçi </span><strong>davasını iş mahkemesinde açar</strong><span style="font-weight: 400;">.
+          Dava açmak için arabuluculuk son tutanağı tarihinden itibaren 2 haftalık bir süre öngörülmüştür (özellikle işe iade
+          davalarında bu süre kritik önemdedir). Arabuluculuk dava şartına uyulduktan sonra, dava dilekçesi hazırlanarak
+          görevli mahkemede dava açılır.</span></p>
+      <h1><strong>İşçi Alacakları Davasında Görevli ve Yetkili Mahkemeler</strong></h1>
+      <p><span style="font-weight: 400;">İşçilik alacakları davalarında görevli mahkeme, </span><strong>iş
+          mahkemeleridir</strong><span style="font-weight: 400;">. İş mahkemeleri, işçi ile işveren arasındaki iş
+          sözleşmesinden doğan her türlü uyuşmazlıkta uzman mahkeme olarak görevlendirilmiştir (4857 sayılı İş Kanunu m.5;
+          7036 sayılı Kanun m.5). Eğer uyuşmazlığın bulunduğu yerde ayrı bir iş mahkemesi yoksa, görev Asliye Hukuk Mahkemesi
+          tarafından iş mahkemesi sıfatıyla yürütülür. Dolayısıyla, davanın açılacağı yerde iş mahkemesi kurulmamışsa, dava
+          dilekçesi o yer asliye hukuk mahkemesine sunulur ancak yargılama usulü iş mahkemesi usulüne göre ilerler.</span></p>
+      <p><strong>Yetkili mahkeme</strong><span style="font-weight: 400;"> konusunda, iş mahkemeleri kanunu ve Hukuk
+          Muhakemeleri Kanunu özel yetki kuralları öngörmüştür. İşçilik alacağı davalarında genel yetki kuralı olarak davalı
+          işverenin yerleşim yeri mahkemesi yetkili olmakla birlikte, </span><strong>işçinin işini yaptığı yer
+          mahkemesi</strong><span style="font-weight: 400;"> de yetkilidir. Bu, uygulamada işçinin çalıştığı işyerinin
+          bulunduğu yer mahkemesi anlamına gelir. Örneğin işverenin merkezi İstanbul’da ancak işçinin çalıştığı işyeri
+          Kocaeli’de ise, işçi davasını İstanbul’da veya Kocaeli’de açmakta serbesttir. Yargıtay da işçinin fiilen çalıştığı
+          işyerinin bulunduğu yerin, işçilik alacakları davalarında yetkili kabul edilmesi gerektiğini belirtmektedir.</span>
+      </p>
+      <p><span style="font-weight: 400;">Buna ek olarak, HMK m.10 gereğince sözleşmenin ifa edileceği yer mahkemesi de yetkili
+          sayılır. Ücret alacağı davalarında ifa yeri, ücretin ödenmesi gereken yerdir (genellikle işçinin maaşının yattığı
+          banka şubesinin yeri de ifa yeri sayılabilir). Bu da işçinin ikametgahında dava açabilmesine olanak tanıyabilir.
+          Uygulamada en pratik yol, </span><strong>işyerinin bulunduğu yer mahkemesinde</strong><span
+          style="font-weight: 400;"> davayı açmaktır.</span></p>
+      <p><span style="font-weight: 400;">Özetle: Görevli mahkeme </span><strong>İş Mahkemesi</strong><span
+          style="font-weight: 400;">, yetkili mahkeme ise </span><strong>işverenin merkezinin veya işçinin çalıştığı işyerinin
+          bulunduğu yer iş (veya asliye) mahkemesidir</strong><span style="font-weight: 400;">.</span></p>
+      <h1><strong>İşçi Alacaklarının Türleri</strong></h1>
+      <p><span style="font-weight: 400;">İşçi alacakları denince, işçinin çalışması karşılığında hak kazandığı tüm parasal
+          haklar anlaşılır. Bunlar, </span><em><span style="font-weight: 400;">iş sözleşmesinin sona ermesine bağlı
+            olanlar</span></em><span style="font-weight: 400;"> ve </span><em><span style="font-weight: 400;">devam eden
+            çalışma sırasında da talep edilebilenler</span></em><span style="font-weight: 400;"> olarak ikiye
+          ayrılabilir.</span></p>
+      <p><span style="font-weight: 400;">Kıdem, ihbar, yıllık izin ücreti, kötü niyet tazminatı gibi işçi alacaklarının bir
+          kısmı iş sözleşmesinin sona ermesiyle doğar. </span></p>
+      <p><span style="font-weight: 400;">Ücret, fazla mesai, hafta tatili, UBGT ücreti, iş sözleşmesi yada toplu iş
+          sözleşmesinden doğan prim, ikramiye, sosyal hak ödemeleri (yakacak yardımı, giyim yardımı vb.) gibi bazı alacaklar
+          ise iş ilişkisi devam ederken de talep edilebilirdir ancak uygulamada genelde ilişki bittikten sonra topluca talep
+          konusu olurlar. </span></p>
+      <p><span style="font-weight: 400;">İşçi alacakları davası açılırken, </span><strong>belirsiz alacak davası</strong><span
+          style="font-weight: 400;"> olarak açılması sık rastlanan bir yöntemdir; böylece işçi hesaplayamadığı alacakların
+          miktarını dava içinde bilirkişi yardımıyla netleştirip talebini artırabilir.</span></p>
+      <h1><strong>İşçi Alacaklarında Zamanaşımı Süreleri</strong></h1>
+      <p><span style="font-weight: 400;">İşçi alacaklarında zamanaşımı, alacak hakkının belli bir süre geçtikten sonra dava
+          edilebilme niteliğini yitirmesidir. 25 Ekim 2017 tarihinde yürürlüğe giren 7036 sayılı Kanun ile pek çok işçilik
+          alacağının zamanaşımı süreleri 5 yıla indirilmiştir. Bu tarihten </span><strong>önce</strong><span
+          style="font-weight: 400;"> sona eren iş sözleşmelerinden doğan bazı alacaklar için eski 10 yıllık süre uygulanmaya
+          devam ederken, bu tarihten sonra sona erenler için yeni 5 yıllık süreler geçerlidir. </span></p>
+      <p><span style="font-weight: 400;">Zamanaşımı, işveren tarafından mahkemede </span><strong>def’i olarak ileri
+          sürülmedikçe</strong><span style="font-weight: 400;"> hakim tarafından re’sen dikkate alınmaz. Yani üzerinden 5
+          yıldan fazla süre geçmiş bir alacak için dava açılsa bile, işveren “zamanaşımı itirazında” bulunmazsa, hakim alacağı
+          hükmedebilir. Ancak uygulamada işverenler genellikle zamanaşımı defi’ni ileri sürerler. Bir de </span><strong>kısmi
+          dava</strong><span style="font-weight: 400;"> açılması halinde, sadece dava edilen kısım için zamanaşımı kesilir;
+          davaya konu edilmeyen kısım için süre işlemeye devam eder. Bu nedenle işçilik alacaklarında tüm alacak kalemlerini
+          ve dönemlerini kapsayacak şekilde talepte bulunmak önemlidir.</span></p>
+      <p><span style="font-weight: 400;">İşçi alacaklarında zamanaşımı sürelerine ilişkin daha detaylı içerikler için web
+          sitemizi ve sosyal medya hesaplarımızı takip edebilirsiniz.</span></p>
+      <h1><strong>İşçi Alacaklarında Faiz Türü ve Faiz Başlangıç Tarihleri</strong></h1>
+      <p><span style="font-weight: 400;">İşçilik alacaklarında farklı faiz türleri uygulanabilmektedir. Genel olarak
+        </span><strong>4857 sayılı İş Kanunu m.34</strong><span style="font-weight: 400;">, gününde ödenmeyen işçi ücretleri
+          için bankaların </span><strong>mevduata uyguladığı en yüksek faiz oranının</strong><span style="font-weight: 400;">
+          uygulanacağını emretmiştir. Yargıtay da işçilik alacaklarında kanunda belirtilen bu “en yüksek mevduat faizinin”,
+          sözleşmede veya dava dilekçesinde ayrıca belirtilmemiş olsa bile uygulanması gerektiğini içtihat etmiştir. Bu
+          nedenle kıdem tazminatı, ücret, fazla mesai, izin ücreti gibi </span><em><span style="font-weight: 400;">parasal
+            işçi alacaklarında</span></em><span style="font-weight: 400;"> temerrüt faizi olarak genellikle </span><strong>en
+          yüksek mevduat faizi</strong><span style="font-weight: 400;"> işletilir. Aksi özel bir durum olmadıkça, ayrı bir
+          düşük yasal faiz uygulanmaz. Örneğin Yargıtay bir kararında, dava dilekçesinde sadece “yasal faiz” istenmiş olsa
+          bile işçilik alacağı için bunun iş kanunundan kaynaklanan </span><strong>en yüksek mevduat faizi</strong><span
+          style="font-weight: 400;"> olarak anlaşılması gerektiğini belirtmiştir. Faiz başlangıcı ise alacak türüne göre
+          değişir.</span></p>
+      <p><strong>Örnek olarak:</strong><span style="font-weight: 400;"> Bir işçi Eylül ayında ödenmesi gereken maaşını
+          alamamışsa ve 5 Ekim’de arabulucu başvurusu yapıp 20 Ekim’de anlaşamama tutanağı almışsa, Yargıtay’a göre işveren 20
+          Ekim’de temerrüde düşmüş kabul edilir ve faiz o tarihten başlatılır. Kıdem tazminatı için ise fesih tarihi diyelim
+          ki 1 Ekim ise, 2 Ekim’den itibaren faiz işler (30 günlük mevduat faizi). Faiz oranları dönemsel olarak Türkiye
+          Cumhuriyet Merkez Bankası tarafından açıklanan mevduat faiz oranlarına göre tespit edilir. İşçilik alacaklarında
+          uygulanacak faiz zaman aşımı bakımından da </span><strong>5 yıl</strong><span style="font-weight: 400;"> olup, asıl
+          alacağa bağlı fer’i haktır (faizin kendisi ayrıca talep edilmezse dahi hakim tarafından resen hesaplanmaz, talep
+          etmek gerekir).</span></p>
+      <p><span style="font-weight: 400;">İşçi alacaklarında faize ilişkin daha detaylı içerikler için web sitemizi ve sosyal
+          medya hesaplarımızı takip edebilirsiniz.</span></p>
+      <h1><strong>İşçi Alacaklarında İspat Yükü ve Deliller</strong></h1>
+      <p><span style="font-weight: 400;">İş davalarında ispat yükü, genel kural olan “iddia eden ispatlar” prensibine göre
+          uyarlanmıştır ancak işçi lehine bazı kolaylıklar getirilmiştir. Her bir alacak kalemi için ispat yükünün kimde
+          olduğu değişebilmektedir:</span></p>
+      <p><span style="font-weight: 400;">İşçi alacağını doğuran olguları ortaya koymakla yükümlü iken, işveren ödemenin
+          yapıldığını veya hakkın ortadan kalktığını ispatla yükümlüdür. Bu düzenleme, işçi-işveren arasındaki güç
+          dengesizliğinden dolayı, zayıf durumda olan işçiyi korumak amacıyla geliştirilmiştir. </span></p>
+      <p><span style="font-weight: 400;">İşçi alacaklarında ispat yüküne ilişkin daha detaylı içerikler için web sitemizi ve
+          sosyal medya hesaplarımızı takip edebilirsiniz.</span></p>
+      <h1><strong>İşçi Alacakları Davasında Kanun Yolları (İstinaf ve Temyiz)</strong></h1>
+      <p><span style="font-weight: 400;">İş mahkemesinde görülen işçi alacağı davasında mahkeme kararını verdikten sonra,
+          tarafların kanun yolu hakları vardır:</span></p>
+      <p><strong>İstinaf (Bölge Adliye Mahkemesine Başvuru):</strong><span style="font-weight: 400;"> İlk derece iş
+          mahkemesinin kararına karşı taraflar, kararın tebliğinden itibaren </span><strong>2 hafta</strong><span
+          style="font-weight: 400;"> içinde bölge adliye mahkemesine (istinaf mahkemesine) başvurabilir. İstinaf, maddi
+          vakıaları ve hukuku hem şekilde hem esas yönünden denetleyen ikinci derece yargı yoludur. Bölge adliye mahkemesi
+          (BAM), dosyayı inceler; gerekli görürse duruşma yapabilir veya dosya üzerinden karar verebilir. BAM, ilk derece
+          kararını hukuka uygun bulursa </span><strong>istinaf başvurusunu esastan reddeder</strong><span
+          style="font-weight: 400;">; hukuka aykırılık tespit ederse kararı kaldırıp düzelterek yeni hüküm kurar veya
+          yargılamada eksiklik varsa ilk derece kararını kaldırıp dosyayı yeniden yargılama yapılmak üzere geri gönderir.
+          İşçilik alacağı davalarında istinaf sınırı oldukça düşüktür (2024 yılı için </span><strong>≈₺28.250</strong><span
+          style="font-weight: 400;"> üzerindeki davalar istinafa tabidir), bu yüzden hemen her işçilik davası istinafa
+          götürülebilir. BAM kararı, değeri belirli bir sınırı aşmayan davalar için </span><strong>kesin</strong><span
+          style="font-weight: 400;"> olup temyize gidilemez; sınırı aşıyorsa temyiz edilebilir. (Örneğin 2024’te işçilik
+          alacaklarında yaklaşık ₺378.000’ün altındaki uyuşmazlıklarda BAM kararı kesindir.)</span></p>
+      <p><strong>Temyiz (Yargıtay’a Başvuru):</strong><span style="font-weight: 400;"> Bölge adliye mahkemesi kararına karşı,
+          şartları mevcutsa, tebliğden itibaren </span><strong>2 hafta</strong><span style="font-weight: 400;"> içinde
+          Yargıtay’a temyiz başvurusu yapılabilir. Yargıtay, hukuki denetim yapar; kural olarak olguları yeniden
+          değerlendirmez, hukuka uygunluk inceler. Temyiz edilebilme sınırı her yıl yeniden belirlenir (2024 için BAM
+          kararlarında </span><strong>₺78.630</strong><span style="font-weight: 400;"> ve üzeri işçilik alacakları kararları
+          temyize tabidir, manevi tazminat gibi belirsiz değerli davalar hariç). Yargıtay, dosya üzerinde inceleme yaparak BAM
+          kararını onayabilir veya bozabilir. </span><strong>Onama halinde</strong><span style="font-weight: 400;"> BAM kararı
+          kesinleşir. </span><strong>Bozma halinde</strong><span style="font-weight: 400;"> dosya tekrar ilgili BAM veya ilk
+          derece mahkemesine gider; bozma gerekçesine uyularak yeniden karar verilir veya önceki kararda direnilebilir.
+          Direnme kararlarını Yargıtay Hukuk Genel Kurulu inceler.</span></p>
+      <p><strong>Süreler:</strong><span style="font-weight: 400;"> İstinaf ve temyiz başvuruları için 2 haftalık süreler hak
+          düşürücüdür. Bu nedenle işçi veya işveren, mahkeme kararını tebliğ aldıktan sonra 2 hafta içinde dilekçesini
+          vermezse kararı kabul etmiş sayılır ve karar kesinleşir. İşe iade davaları gibi özel durumlarda temyiz mercii
+          doğrudan Yargıtay olup süre 2 hafta olarak uygulanır (BAM’a gitmez). Kanun yollarına başvuru harç ve masrafları,
+          haksız çıkan taraf üzerine bırakılabilir; ancak </span><strong>işçi lehine hükmedilen alacakların icra takibinde
+          işçilerden harç alınmaz</strong><span style="font-weight: 400;"> (İş Mahk. K. m.5).</span></p>
+      <p><strong>Kesinleşme ve İcra:</strong><span style="font-weight: 400;"> Mahkeme kararı istinaf/temyiz edilmeyerek ya da
+          kanun yolu sonucunda </span><strong>kesinleştiğinde</strong><span style="font-weight: 400;">, işverenin kararda
+          yazan tutarları genelde 30 gün içinde ödemesi beklenir. Ödeme yapılmazsa, işçi mahkemeden </span><strong>ilam (icra)
+          harcırahını</strong><span style="font-weight: 400;"> alarak </span><strong>icra dairesine</strong><span
+          style="font-weight: 400;"> başvurabilir. İş mahkemesi kararları, ilamlı icra yoluyla aynen bir mahkeme hükmü gibi
+          zorla icra edilir. Bu kapsamda işçi, işverenin banka hesaplarına, taşınmazlarına, araçlarına haciz koydurabilir.
+          İşveren temyize giderken </span><strong>karar düzeltme</strong><span style="font-weight: 400;"> gibi yollara da
+          başvurabilir ancak işçilik davalarında karar düzeltme yolu 2022’de kaldırılmıştır.</span></p>
+      <p><span style="font-weight: 400;">Sonuç olarak, işçi alacağı davasında ilk derece mahkemesi kararı kesin hüküm
+          değildir; istinaf ve şartları sağlanırsa temyiz yoluyla denetime tabidir. İşçi açısından önemli olan, süreleri
+          kaçırmadan haklarını takip etmektir. Kesinleşen alacaklar ödenmezse, devlet zoruyla tahsil mekanizmaları (icra-iflas
+          hukuku yolları) devreye sokulabilir.</span></p>
+      <p><br /><br /></p>
+    `,
+  },
 ];
