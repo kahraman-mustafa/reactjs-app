@@ -41,7 +41,7 @@ const LandingPage: React.FC = () => {
             Adres: Odunluk Mahallesi Akpınar Caddesi No:7 Daire:14 Kat:2,
             Nilüfer, Bursa, Türkiye
           </p>
-          <p>Telefon: +90 (224) 334 02 38 / Cep: +90 (538) 956 4380</p>
+          <p>Telefon & Whatsapp: +90 (224) 334 02 38</p>
 
           {/* Google Maps iframe */}
           <div className="ratio ratio-16x9 my-3">
